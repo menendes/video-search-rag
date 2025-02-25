@@ -1,0 +1,31 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Conda environment
+.conda/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# .env file for environment variables (if you use it)
+.env
+
+# VSCode settings folder
+.vscode/
+
+# PyCharm settings folder
+.idea/
+
+# Output files
+*.log
+*.csv
+*.json
+
+# Video files (if you don't want to track them in Git)
+data/
+
+# Others (You can add other directories or files as necessary)
