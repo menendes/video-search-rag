@@ -4,6 +4,7 @@ from llama_index.retrievers.videodb import VideoDBRetriever
 from videodb import SearchType, IndexType
 from llama_index.core import get_response_synthesizer
 from videodb import play_stream
+import time
 
 conn = connect()
 coll = conn.get_collection('c-3aadcc65-a560-4d4c-a474-09cf38254ad0') #replace with your collection id
@@ -75,4 +76,5 @@ scene_results = [
 all_results = spoken_results + scene_results
 
 stream_link = video.generate_stream(all_results)
+time.sleep(3)
 play_stream(stream_link)
